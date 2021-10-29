@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "84d8c923-bb07-47aa-88af-731a33af92e1",
+		"name": "Login Signup Validation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hello@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5003/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hello@123",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Praveen Bairagi",
+							"type": "text"
+						},
+						{
+							"key": "userImage",
+							"type": "file",
+							"src": "l1r5v7ddX/download.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5003/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Products.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5003/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "apple",
+							"type": "text"
+						},
+						{
+							"key": "productType",
+							"value": "fruit",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "productColour",
+							"value": "red",
+							"type": "text"
+						},
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": [
+								"MUCtq9GsV/download.jpeg",
+								"MUCtq9GsV/download (1).jpeg",
+								"MUCtq9GsV/download (2).jpeg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5003/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "apple",
+							"type": "text"
+						},
+						{
+							"key": "productType",
+							"value": "fruit",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "productColour",
+							"value": "red",
+							"type": "text"
+						},
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": [
+								"MUCtq9GsV/download.jpeg",
+								"MUCtq9GsV/download (1).jpeg",
+								"MUCtq9GsV/download (2).jpeg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5003/products/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5003/products/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
